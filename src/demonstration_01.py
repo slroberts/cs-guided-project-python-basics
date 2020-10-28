@@ -9,5 +9,12 @@ Examples:
 - addition(7, 3) ➞ 10
 """
 def addition(a, b):
-    # Your code here
+    """
+    a function that takes two numbers as arguments and return their sum.
+    """
+    # return the value of the expression a plus b to the caller
+    return a + b
 
+print(addition(3, 2))
+print(addition(-3, -6))
+print(addition(7, 3))
