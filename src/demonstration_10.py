@@ -13,6 +13,15 @@ Notes:
 "75%" to 12 would be 9 as opposed to taking off 75% (making 3)).
 - There won't be any awkward decimal numbers, only 0.5 to deal with.
 """
-def mapping(letters):
-    # Your code here
+def get_discounts(amount, discount):
+    """
+    a function that applies a discount d to every number in the list.
+    """
+    discount_num = float(discount[:-1])/100
 
+    return [int(i * discount_num) for i in amount]
+
+
+print(get_discounts([2, 4, 6, 11], "50%"))
+print(get_discounts([10, 20, 40, 80], "75%"))
+print(get_discounts([100], "45%"))
